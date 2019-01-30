@@ -10,7 +10,7 @@ class Song < ActiveRecord::Base
     if existing_artist
       self.artist = existing_artist
     else
-      self.artist = Artist.create(name: => name)
+      self.artist = Artist.create(name: name)
     end
   end
 end
