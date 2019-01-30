@@ -3,7 +3,7 @@ module SongsHelper
     if song.artist
       link_to song.artist, :controller => artist_controller, :action => show
     else
-      link to the song's edit page
+      link_to song, :controller => song_controller, :action => show
     end
   end
 end
